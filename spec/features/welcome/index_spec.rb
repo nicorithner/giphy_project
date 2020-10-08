@@ -28,6 +28,7 @@ RSpec.describe 'As a visitor', type: :feature do
           end
         end
       end
+
       it "After adding a query and clicking 'Submit' visitor is redirected to '/search/index' page" do
         within('.front_page_form') do
           fill_in 'Search', with: 'Duffy Duck'
@@ -35,6 +36,13 @@ RSpec.describe 'As a visitor', type: :feature do
         end
         expect(current_path).to eq('/search/index')
       end
+    end
+
+    it "There is 'Home' link in every page" do
+      visit root_path
+      expect(page).to have_link('Home')
+      visit search_index_path
+      expect(page).to have_link('Home')
     end
   end
 end

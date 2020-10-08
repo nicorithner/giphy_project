@@ -4,10 +4,10 @@ This app is an exercise to practice consuming an api from giphy.
 
 When a visitor visits the home page
 
-- [] sees a welcome message
-- [] sees instructions
-- [] sees a search bar with a title indicating to input the query in it.
-- [] When fills in the search bar with a query and clicks 'Submit', is redirected to 'search/index'
+- [x] sees a welcome message
+- [x] sees instructions
+- [x] sees a search bar with a title indicating to input the query in it.
+- [x] When fills in the search bar with a query and clicks 'Submit', is redirected to 'search/index'
 
 ### Story 2
 
@@ -19,3 +19,12 @@ After the visitor presses submit in the search form in the home page gets redire
 In the 'search/index' page the visitor
 
 - [] Sees a sample of 10 gifs matching the query created.
+
+### Story 4
+
+Stylized views
+When a visitor visits the home page
+
+- [] Sees The content centered on the page.
+- [] The title is predominat.
+- [] The instructions and search bar are in a container that is of different color than the background.

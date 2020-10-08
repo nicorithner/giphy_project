@@ -1,4 +1,4 @@
-This app is an exercise to practice consuming an api from giphy. 
+This app is an exercise to practice consuming an api from giphy.
 
 ### Story 1
 
@@ -11,11 +11,11 @@ When a visitor visits the home page
 
 ### Story 2
 
-After the visitor presses submit in the search form in the home page gets redirected to the index page 
-In the 'search/index' page the visitor
-
-- [] Sees a sample of 10 gifs matching the query created
+- [] There is navigation bar on top with a link to the home page
 
 ### Story 3
 
-- [] There is navigation bar on top with a link to the home page
+After the visitor presses submit in the search form in the home page gets redirected to the index page.
+In the 'search/index' page the visitor
+
+- [] Sees a sample of 10 gifs matching the query created.

@@ -1,7 +1,21 @@
 This app is an exercise to practice consuming an api from giphy. 
 
-When a visitor visits the home page sees a welcome message and a search bar with a title indicating to input the query in it.
+### Story 1
 
-When the visitor presses submit gets redirected to a new page where a sample of 10 gifs matching the query are displayed
+When a visitor visits the home page
 
-There is navigation bar on top with a link to the home page
+- [] sees a welcome message
+- [] sees instructions
+- [] sees a search bar with a title indicating to input the query in it.
+- [] When fills in the search bar with a query and clicks 'Submit', is redirected to 'search/index'
+
+### Story 2
+
+After the visitor presses submit in the search form in the home page gets redirected to the index page 
+In the 'search/index' page the visitor
+
+- [] Sees a sample of 10 gifs matching the query created
+
+### Story 3
+
+- [] There is navigation bar on top with a link to the home page

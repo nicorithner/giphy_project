@@ -6,7 +6,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails'
 gem 'faraday'
 gem 'figaro', '~> 1.2'
 gem 'jbuilder', '~> 2.7'

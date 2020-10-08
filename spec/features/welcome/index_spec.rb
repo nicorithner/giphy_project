@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "As a visitor" do
+RSpec.describe "As a visitor" , type: :feature do
   describe "Home page features" do
 
     before :each do
@@ -13,7 +13,7 @@ describe "As a visitor" do
     end
 
     it "There instructions" do
-      within('.front_page_form') do
+      within('.front_page_container') do
         expect(page).to have_css('h2', text: "How To Use This App")
         expect(page).to have_content("Enter your gif search in the form below.")
       end
@@ -22,13 +22,15 @@ describe "As a visitor" do
     describe "There is a search form and a query redirects to 'search/index'" do
       
       it "There is a search form" do
-        within('.front_page_form') do
-          find_field('Search')
-          find_button('Submit')
+        within('.front_page_container') do
+          within('.front_page_form') do
+            find_field('Search for:')
+            find_button('Submit')
+          end
         end
       end
       
-      it "After adding a query and clicking 'Submit' visitor is redirected to 'search/index' page" do
+      it "After adding a query and clicking 'Submit' visitor is redirected to '/search/index' page" do
         within('.front_page_form') do
           fill_in 'Search', with: 'Duffy Duck'
           click_button('Submit')

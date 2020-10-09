@@ -27,7 +27,7 @@ When a visitor visits the home page
 After the visitor presses submit in the search form in the home page gets redirected to the index page.
 In the 'search/index' page the visitor
 
-- [] Sees the search words as a heading.
+- [x] Sees the search words as a heading.
 - [] Sees a sample of 10 gifs matching the query created.
 
 ### Story 4

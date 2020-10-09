@@ -35,9 +35,8 @@
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore application configuration
-/config/application.yml
-
 # Ignore test-related files
 /coverage.data
 /coverage/
+# Ignore application configuration
+/config/application.yml

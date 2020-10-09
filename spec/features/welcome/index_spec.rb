@@ -31,7 +31,7 @@ RSpec.describe 'As a visitor', type: :feature do
 
       it "After adding a query and clicking 'Submit' visitor is redirected to '/search/index' page" do
         within('.front_page_form') do
-          fill_in 'Search', with: 'Duffy Duck'
+          fill_in 'Search for:', with: 'Duffy Duck'
           click_button('Submit')
         end
         expect(current_path).to eq('/search/index')

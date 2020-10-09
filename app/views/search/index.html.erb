@@ -1,0 +1,15 @@
+<center>
+  <h1><%= params[:q] %></h1>
+
+  <div class="results">
+    <table>
+      <% @gifs.each do |gif| %>
+      <div class="gif">
+        <tr>
+          <td class='image'><%= image_tag(gif.image_url)%></td>
+        </tr>
+      </div>
+      <% end %>
+    </table>
+  </div>
+</center>

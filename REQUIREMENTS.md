@@ -2,7 +2,7 @@ This app is an exercise to practice consuming an api from giphy.
 
 ## Requirements
 
-1. Set up testing suite to include rspec, shoulda-matchers, rubocop, and simplicov
+1. - [] Set up testing suite to include rspec, shoulda-matchers, rubocop, and simplicov
 2. Follow TDD
 3. Get an API from giphy url: 'https://developers.giphy.com/dashboard/'
 4. Use faraday and figaro
@@ -20,7 +20,7 @@ When a visitor visits the home page
 
 ### Story 2
 
-- [] There is navigation bar on top with a link to the home page
+- [x] There is navigation bar on top with a link to the home page
 
 ### Story 3
 
@@ -28,7 +28,7 @@ After the visitor presses submit in the search form in the home page gets redire
 In the 'search/index' page the visitor
 
 - [x] Sees the search words as a heading.
-- [] Sees a sample of 10 gifs matching the query created.
+- [x] Sees a sample of 10 gifs matching the query created.
 
 ### Story 4
 

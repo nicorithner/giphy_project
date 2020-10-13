@@ -45,6 +45,7 @@ group :test do
   gem 'rspec-rails'
   gem 'simplecov'
   gem 'webmock'
+  gem 'vcr'
 end
 
 

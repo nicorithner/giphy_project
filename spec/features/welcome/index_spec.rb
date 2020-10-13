@@ -29,20 +29,21 @@ RSpec.describe 'As a visitor', type: :feature do
         end
       end
 
-      it "After adding a query and clicking 'Submit' visitor is redirected to '/search/index' page" do
-        within('.front_page_form') do
-          fill_in 'Search for:', with: 'Duffy Duck'
-          click_button('Submit')
+      it "After adding a query and clicking 'Submit' visitor is redirected to '/search/index' page and there is a 'home' link in the top of the page" do
+        VCR.use_cassette('giphy_search') do
+          within('.front_page_form') do
+            fill_in 'Search for:', with: 'Duffy Duck'
+            click_button('Submit')
+          end
+          expect(current_path).to eq('/search/index')
+          expect(page).to have_link('Home')
         end
-        expect(current_path).to eq('/search/index')
       end
     end
 
-    it "There is 'Home' link in every page" do
-      visit root_path
-      expect(page).to have_link('Home')
-      visit search_index_path
-      expect(page).to have_link('Home')
+    it "There is 'Home' link in the homepage" do
+          visit root_path
+          expect(page).to have_link('Home')
     end
   end
 end

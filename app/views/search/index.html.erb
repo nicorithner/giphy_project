@@ -4,7 +4,7 @@
   <div class="results">
       <% @gifs.each do |gif| %>
         <div class="gif">
-        <img src= "<%= gif[:images][:original][:url]%>"> <br/>
+          <img src= "<%= gif.image%>">
         </div>
       <% end %>
   </div>

@@ -4,12 +4,16 @@ body {
   color: whitesmoke;
   text-align: center;
 }
-
+nav {
+  background-color: rgb(27, 27, 27);
+  text-align: left;
+  font-size: medium;
+  padding: 1em;
+  margin: -10px;
+}
 a {
   text-decoration: none;
   font-family: Arial;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 a:link {             
@@ -28,6 +32,24 @@ h1 {
   font-weight: bold;
 }
 
-.front_page_container {
+.main {
+  background-color: rgb(27, 27, 27);
+  padding: 2em;
   line-height: 1.5em;
+}
+.results {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  padding: 1em;
+  background-color: rgb(27, 27, 27);
+}
+.gif {
+  align-self: center;
+  justify-self: center;
+  background-color: black;
+  padding: 1em;
+  margin: 1em;
 }

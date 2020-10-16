@@ -32,6 +32,23 @@ In the 'search/index' page the visitor
 
 ### Story 4
 
+Facade patterns Implementation
+
+- [x] There is a **Facade**
+  - [x] There is a spec/facade test
+  - [x] Runs a query
+  - [x] Transforms results into a ruby object
+- [x] There is a **Service**
+  - [x] There is a spec/services test
+  - [x] It makes an api call
+  - [x] It parses the body
+- [x] There is a **Poro**
+  - [x] There is a spec/poros test
+  - [x] There is an accessible attribute 'image'
+
+
+### Story 5
+
 Stylized views
 When a visitor visits the home page
 
